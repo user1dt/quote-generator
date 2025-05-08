@@ -10,20 +10,46 @@
 <body>
     <div class="container">
         <h1>Quote for the Day</h1>
-        <p id="quote">"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
-        <button id="new-quote">Get a new quote</button>
-        <div class="controls">
-            <select id="category-select">
-              <option value="science">Science</option>
-              <option value="philosophy">Philosophy</option>
-            </select>
-            <button >Previous</button>
-            <button >Next</button>
-            <button >Random</button>
-            <button>A+</button>
-            <button >A-</button>
-            
+        
+        <div class="quote-card">
+          <p class="quote-text" id="quote-text">"The only limit to our realization of tomorrow is our doubts of today."</p>
+          <p class="quote-author" id="quote-author">- Franklin D. Roosevelt</p>
+      </div>
+      
+      <div class="controls">
+          <div class="control-group">
+              <select id="category-select">
+                  <option value="all">All Categories</option>
+                  <option value="inspiration">Inspiration</option>
+                  <option value="science">Science</option>
+                  <option value="humor">Humor</option>
+                  <option value="philosophy">Philosophy</option>
+              </select>
           </div>
+          
+          <div class="control-group">
+              <button id="prev-btn">Previous</button>
+              <button id="next-btn">Next</button>
+              <button id="random-btn">Random</button>
+          </div>
+      </div>
+      
+      <div class="toggle-container">
+          <div class="toggle-group">
+              <span>Light</span>
+              <label class="toggle-switch">
+                  <input type="checkbox" id="dark-mode-toggle">
+                  <span class="slider"></span>
+              </label>
+              <span>Dark</span>
+          </div>
+          
+          <div class="toggle-group font-buttons">
+              <span>Font Size:</span>
+              <button id="font-decrease-btn">A-</button>
+              <button id="font-increase-btn">A+</button>
+          </div>
+      </div>
     </div>
 
     
